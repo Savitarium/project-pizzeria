@@ -59,33 +59,34 @@
       thisProduct.data = data;
       thisProduct.renderInMenu();
       thisProduct.initAccordion();
-      console.log('new Product:', thisProduct);
+      console.log('new product: ', thisProduct);
     }
     renderInMenu(){
       const thisProduct = this;
-      /* generate HTML based on template */
+      /* generate hTML based on template */
       const generatedHTML = templates.menuProduct(thisProduct.data);
       /* create element using utils.createElementFromHTML */
       thisProduct.element = utils.createDOMFromHTML(generatedHTML);
+      console.log(thisProduct.element);
       /* find menu container */
       const menuContainer = document.querySelector(select.containerOf.menu);
-      /* add elemment to menu */
+      /* add element to menu */
       menuContainer.appendChild(thisProduct.element);
-
     }
     initAccordion(){
       const thisProduct = this;
 
       /* find the clickable trigger (the element that should react to clicking) */
-      const clickableTrigger = thisProduct.element.querySelector('.product__header'); //aby odnaleźć clickableTrigger, użyj selektora select.menuProduct.clickable - nie wiem czemu jak w tym miejscu używam zamiast .product__header wymienionego wyżej selektora to wyrzuca mi null dla addEventListener
+      const clickableTrigger = thisProduct.element.querySelector(select.menuProduct.clickable);
       /* START: add event listener to clickable trigger on event click */
       clickableTrigger.addEventListener('click', function(event) {
         /* prevent default action for event */
         event.preventDefault();
         /* find active product (product that has active class) */
         const activeProduct = document.querySelector(select.all.menuProductsActive);
+
         /* if there is active product and it's not thisProduct.element, remove class active from it */
-        if (activeProduct !== null && activeProduct != thisProduct.element){
+        if (activeProduct !== null && activeProduct != thisProduct.element) {
           activeProduct.classList.remove(classNames.menuProduct.wrapperActive);
         }
         /* toggle active class on thisProduct.element */
@@ -97,15 +98,19 @@
   const app = {
     initMenu: function(){
       const thisApp = this;
-      console.log('thisApp.data:', thisApp.data);
+      console.log('thisApp.data: ', thisApp.data);
       for(let productData in thisApp.data.products){
         new Product(productData, thisApp.data.products[productData]);
+        console.log('Product: ', productData);
       }
     },
+
     initData: function(){
       const thisApp = this;
+
       thisApp.data = dataSource;
     },
+
     init: function(){
       const thisApp = this;
       console.log('*** App starting ***');
@@ -117,5 +122,6 @@
       thisApp.initMenu();
     },
   };
+
   app.init();
 }
