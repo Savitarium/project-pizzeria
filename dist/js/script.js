@@ -82,6 +82,8 @@
       thisProduct.formInputs = thisProduct.form.querySelectorAll(select.all.formInputs);
       thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
+      thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
+      console.log('thisProduct.imagewrapper: ', thisProduct.imageWrapper);
     }
     initAccordion(){
       const thisProduct = this;
@@ -133,21 +135,27 @@
         console.log(paramId, param);
 
         // for every option in this category
-        for(let optionId in param.options) {
+        for (let optionId in param.options) {
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
           const option = param.options[optionId];
-          console.log(optionId, option);
-          if(formData[paramId] && formData[paramId].includes(optionId)) {
-            if(option.default !== true){
+          if (formData[paramId] && formData[paramId].includes(optionId)) {
+            if (option.default !== true) {
               price = price + option.price;
-              console.log('canjcoagsuyiola: ', option.default);
             }
-          } else if (option.default === true){
-             price = price - option.price;
+          } else if (option.default === true) {
+            price = price - option.price;
+          }
+          const optionImage = thisProduct.imageWrapper.querySelector('.' + paramId + '-' + optionId);
+          console.log('optionImage ', optionImage);
+          if(optionImage !== null){
+            if (formData[paramId].includes(optionId)){
+              optionImage.classList.add(classNames.menuProduct.imageVisible);
+            } else {
+              optionImage.classList.remove(classNames.menuProduct.imageVisible);
+            }
           }
         }
       }
-
       // update calculated price in the HTML
       thisProduct.priceElem.innerHTML = price;
     }
