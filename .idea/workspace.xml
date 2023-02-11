@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e92e192b-64ba-4096-913f-deca90b82638" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="2LSwWR7bg7CxnEhVCWknvPVPjdB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,7 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Kursy programistyczne/KODILLA Fullstack bootcamp/Moduł 8/Projekt Pizzeria&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Kursy programistyczne/KODILLA Fullstack bootcamp/Moduł 9/Projekt Pizzeria&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -56,7 +59,9 @@
       <updated>1675877824747</updated>
       <workItem from="1675877835228" duration="4681000" />
       <workItem from="1676024897321" duration="12000" />
-      <workItem from="1676040687797" duration="12788000" />
+      <workItem from="1676040687797" duration="13542000" />
+      <workItem from="1676124840924" duration="381000" />
+      <workItem from="1676125227380" duration="11222000" />
     </task>
     <servers />
   </component>
