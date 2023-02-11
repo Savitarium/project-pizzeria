@@ -211,8 +211,8 @@
         id: thisProduct.id,
         name: thisProduct.data.name,
         amount: thisProduct.amountWidget.value,
-        priceSingle: thisProduct.priceSingle,
-        price: thisProduct.priceSingle * thisProduct.amountWidget.value,
+        priceSingle: thisProduct.priceSingl / thisProduct.amountWidget.value,
+        price: thisProduct.priceSingle,
         params: thisProduct.prepareCartProductParams(),
       };
       return productSummary;
@@ -221,7 +221,7 @@
       const thisProduct = this;
       // covert form to object structure e.g. { sauce: ['tomato'], toppings: ['olives', 'redPeppers']}
       const formData = utils.serializeFormToObject(thisProduct.form);
-      const params = {}
+      const params = {};
       console.log('params: ', params);
       // for every category (param)...
       for(let paramId in thisProduct.data.params) {
@@ -230,7 +230,7 @@
         params[paramId] = {
           label: param.label,
           options: {},
-        }
+        };
         // for every option in this category
         for (let optionId in param.options) {
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
