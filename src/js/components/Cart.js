@@ -21,7 +21,6 @@ class Cart {
     thisCart.dom.form = thisCart.dom.wrapper.querySelector(select.cart.form);
     thisCart.dom.address = thisCart.dom.wrapper.querySelector(select.cart.address);
     thisCart.dom.phone = thisCart.dom.wrapper.querySelector(select.cart.phone);
-    console.log('thisCart.dom.form', thisCart.dom.form);
   }
   initActions() {
     const thisCart = this;

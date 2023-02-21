@@ -47,7 +47,7 @@ class Product{
       const activeProduct = document.querySelector(select.all.menuProductsActive);
 
       /* if there is active product and it's not thisProduct.element, remove class active from it */
-      if (activeProduct !== null && activeProduct != thisProduct.element) {
+      if (activeProduct !== null && activeProduct !== thisProduct.element) {
         activeProduct.classList.remove(classNames.menuProduct.wrapperActive);
       }
       /* toggle active class on thisProduct.element */
@@ -119,7 +119,7 @@ class Product{
   }
   addToCart(){
     const thisProduct = this;
-   // app.cart.add(thisProduct.prepareCartProduct());
+    // app.cart.add(thisProduct.prepareCartProduct());
 
     const event = new CustomEvent('add-to-cart', {
       bubbles: true,
