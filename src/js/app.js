@@ -2,12 +2,13 @@ import {settings, select, classNames} from './settings.js';
 import Product from './components/Product.js';
 import Cart from './components/Cart.js';
 import Booking from './components/Booking.js';
+import Start from './components/Start.js';
 const app = {
   initPages: function(){
     const thisApp = this;
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
-    const idFromHash = window.location.hash.replace('#/', '');
+    const idFromHash = window.location.hash.replace('#/', '') || 'start';
     let pageMatchingHash = thisApp.pages[0].id;
     console.log(pageMatchingHash);
     for(let page of thisApp.pages){
@@ -73,12 +74,20 @@ const app = {
     const bookingWidget = document.querySelector(select.containerOf.booking);
     thisApp.booking = new Booking(bookingWidget);
   },
+  initStart: function(){
+    const thisApp = this;
+
+    const startElem = document.querySelector(select.containerOf.start);
+    console.log(startElem);
+    thisApp.startElem = new Start(startElem, thisApp);
+  },
   init: function(){
     const thisApp = this;
     thisApp.initPages();
     thisApp.initData();
     thisApp.initCart();
     thisApp.initBooking();
+    thisApp.initStart();
   },
 };
 app.init();
