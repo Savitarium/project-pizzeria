@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e92e192b-64ba-4096-913f-deca90b82638" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stylelintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/db/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/db/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/components/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/partials/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/partials/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/partials/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/partials/_product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/partials/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/partials/_settings.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/style.scss" afterDir="false" />
-    </list>
+    <list default="true" id="e92e192b-64ba-4096-913f-deca90b82638" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +71,7 @@
       <workItem from="1676268714707" duration="10000" />
       <workItem from="1676555691308" duration="14204000" />
       <workItem from="1676918534633" duration="7459000" />
-      <workItem from="1676960499102" duration="7978000" />
+      <workItem from="1676960499102" duration="8606000" />
     </task>
     <servers />
   </component>

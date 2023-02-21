@@ -9,6 +9,7 @@ const app = {
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
     const idFromHash = window.location.hash.replace('#/', '');
     let pageMatchingHash = thisApp.pages[0].id;
+    console.log(pageMatchingHash);
     for(let page of thisApp.pages){
       if(page.id === idFromHash){
         pageMatchingHash = page.id;
@@ -23,20 +24,20 @@ const app = {
         const id = clickedElement.getAttribute('href').replace('#', '');
         thisApp.activatePage(id);
         window.location.hash = '#/' + id;
-      })
-    };
+      });
+    }
   },
   activatePage: function(pageId){
     const thisApp = this;
     for(let page of thisApp.pages){
       page.classList.toggle(classNames.pages.active, page.id === pageId);
-    };
+    }
     for(let link of thisApp.navLinks){
       link.classList.toggle(
         classNames.nav.active,
         link.getAttribute('href') === '#' + pageId
       );
-    };
+    }
   },
   initMenu: function(){
     const thisApp = this;

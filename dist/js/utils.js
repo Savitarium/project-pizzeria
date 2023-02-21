@@ -54,8 +54,8 @@ Handlebars.registerHelper('joinValues', function(input, options) {
 
 utils.queryParams = function(params){
   return Object.keys(params)
-      .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
-      .join('&');
+    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
+    .join('&');
 };
 utils.numberToHour = function(number){
   return (Math.floor(number) % 24) + ':' + (number % 1 * 60 + '').padStart(2, '0');

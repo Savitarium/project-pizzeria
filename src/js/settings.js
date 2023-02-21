@@ -28,10 +28,10 @@ export const select = {
       input: 'input.amount', // CODE CHANGED
       linkDecrease: 'a[href="#less"]',
       linkIncrease: 'a[href="#more"]',
-      datePicker: {
-        wrapper: '.date-picker',
-        input: `input[name="date"]`,
-      },
+    },
+    datePicker: {
+      wrapper: '.date-picker',
+      input: `input[name="date"]`,
     },
     hourPicker: {
       wrapper: '.hour-picker',
